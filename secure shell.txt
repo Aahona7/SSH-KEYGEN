@@ -1,0 +1,42 @@
+SSH (Secure Shell):
+
+SSH is a protocol used for secure remote sessions and communication between a client and server.
+
+Default Port: SSH typically operates on port 22.
+
+Example: If my office is located in the city and the office server contains the files and directories 
+I need for my work, I don't need to physically travel to the office. 
+Instead, I can remotely access the server from home to work with those files and directories. 
+Various tools and packages are available for remote sessions, such as RDP for Windows, PuTTY, and Telnet.
+
+SSH-KEYGEN:
+
+SSH-KEYGEN is a tool used to generate a pair of cryptographic keys: a public key and a private key.
+Analogy: This is similar to WhatsApp's end-to-end encryption. 
+The public key is used to encrypt a message, turning it into cipher text or a "salted" address, 
+while the private key is used to decrypt that cipher text back into the original message. 
+Cracking this type of encryption is extremely difficult, taking an estimated 100 to 500 years.
+
+Logging in with SSH:
+Initially, when logging into a machine using SSH, you are prompted to enter a password for authentication.
+However, after setting up SSH key-based authentication, you won't be asked for a password when logging in.
+
+How SSH Works:
+
+1.First, we generate a pair of keys (public and private) on our local machine.
+2.We then share our public key with the server for identification.
+3.The server uses this public key to identify our credentials and sends back an authentication message securely encrypted.
+4.This encrypted message can only be opened with our private key.
+5.After successful authentication, a secure tunnel is established.
+6.All data transmitted through this tunnel is encrypted, ensuring security during transmission.
+7.Once the SSH key-based authentication is set up, future logins will not require a password, 
+as the private key automatically provides the necessary authentication.
+
+
+
+
+
+
+
+
+
